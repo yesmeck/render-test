@@ -47,13 +47,13 @@ replyLabel:
   enable: true
   rules:
     - filter:
-        label: Need Reproduce
+        name: Need Reproduce
       action:
         comment: >
           Please provide a online reproduction by forking this link https://u.ant.design/codesandbox-repro. 
           Issues labeled by `Need Reproduce` will be closed if no activities in 7 days.
     - filter:
-        label: '[Usage|Question]'
+        name: '[Usage|Question]'
       action:
         comment: >
           We use GitHub issues to trace bugs or discuss plans of Ant Design. 
