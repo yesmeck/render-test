@@ -4,11 +4,15 @@ reply:
     - filter:
         notMatch: ant-design-issue-helper
       action:
-        comment: Your issue has been closed because it does not conform to our issue requirements. Please use the [Issue Helper](http://new-issue.ant.design?repo=ant-design) to create an issue, thank you!
+        comment: >
+          Your issue has been closed because it does not conform to our issue requirements. 
+          Please use the [Issue Helper](http://new-issue.ant.design?repo=ant-design) to create an issue, thank you!
         label: invalid
         close: true
     - filter:
-        matchTitle: (官网|网站|mobile ant design|mobile.ant.design|ant design|ant.design|pro).*(挂了|无法访问|不能访问|访问不了|出问题|打不开|登不上|can't open|can not open|can not be reached|can't be reached)
+        matchTitle: >
+          (官网|网站|mobile ant design|mobile.ant.design|ant design|ant.design|pro).*
+          (挂了|无法访问|不能访问|访问不了|出问题|打不开|登不上|can't open|can not open|can not be reached|can't be reached)
       action:
         comment: |
           Ant Design 系列官网由于某些众所周知的原因无法访问，建议翻墙或访问国内镜像站点。
@@ -44,7 +48,18 @@ replyLabel:
     - filter:
         match: Need Reproduce
       action:
-        comment: Please provide a online reproduction by forking this link https://u.ant.design/codesandbox-repro. Issues labeled by `Need Reproduce` will be closed if no activities in 7 days.
+        comment: >
+          Please provide a online reproduction by forking this link https://u.ant.design/codesandbox-repro. 
+          Issues labeled by `Need Reproduce` will be closed if no activities in 7 days.
+    - filter:
+        match: '[Usage|Question]'
+      action:
+        comment: >
+          We use GitHub issues to trace bugs or discuss plans of Ant Design. 
+          So, please [don't ask usage questions](https://github.com/ant-design/ant-design/issues/2320) here. 
+          You can try to ask questions on [Stack Overflow](http://stackoverflow.com/questions/tagged/antd) or
+          [Segment Fault](https://segmentfault.com/t/antd), then apply tag `antd` and `react` to your question.
+        close: true
 translate:
   enable: true
   rules:
