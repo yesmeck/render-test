@@ -49,6 +49,6 @@ translate:
   enable: true
   rules:
     - filter:
-        matchTitle: [\u4e00-\u9fa5]
+        matchTitle: '[\u4e00-\u9fa5]'
       from: zh-CN
   
