@@ -67,4 +67,10 @@ translate:
     - filter:
         matchTitle: '[\u4e00-\u9fa5]'
       from: zh-CN
+commands:
+  enabel: true
+  rules:
+   - command: markdown
+     action:
+       comment: 'Hello, please format your issue in markdown https://segmentfault.com/markdown'
   
