@@ -28,4 +28,4 @@ replyLabel:
     - filter:
         match: Need Reproduce
       action:
-        comment: Please provide a online reproduction by forking this link https://u.ant.design/codesandbox-repro. Issues labeled by \`Need Reproduce\` will be closed if no activities in 7 days.
+        comment: Please provide a online reproduction by forking this link https://u.ant.design/codesandbox-repro. Issues labeled by `Need Reproduce` will be closed if no activities in 7 days.
