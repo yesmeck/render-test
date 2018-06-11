@@ -12,3 +12,10 @@ assign:
       assignees: 
        - yesmeck
       random: true
+release:
+  enable: true
+  rules:
+    - path: 'CHANGELOG.en-US.md'
+      skip: ^`
+    - path: 'CHANGELOG.zh-CN.md'
+      skip: ^`
