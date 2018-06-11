@@ -70,7 +70,7 @@ translate:
 commands:
   enable: true
   rules:
-   - command: markdown
-     action:
-       comment: 'Hello, please format your issue in markdown https://segmentfault.com/markdown'
+    - command: markdown
+      action:
+        comment: 'Hello, please format your issue in markdown https://segmentfault.com/markdown'
   
