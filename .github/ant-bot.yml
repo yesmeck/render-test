@@ -14,7 +14,7 @@ assign:
       random: true
 release:
   enable: true
-  rules:
+  files:
     - path: 'CHANGELOG.en-US.md'
       skip: ^`
     - path: 'CHANGELOG.zh-CN.md'
