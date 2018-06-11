@@ -1,6 +1,14 @@
 reply:
   enable: true
-  unmatch: ant-design-issue-helper
-  comment: Your issue has been closed because it does not conform to our issue requirements. Please use the [Issue Helper](http://new-issue.ant.design?repo=ant-design) to create an issue, thank you!
-  label: invalid
-  close: true
+  rules:
+    - unmatch: ant-design-issue-helper
+      comment: Your issue has been closed because it does not conform to our issue requirements. Please use the [Issue Helper](http://new-issue.ant.design?repo=ant-design) to create an issue, thank you!
+      label: invalid
+      close: true
+assign:
+  enable: true
+  rules:
+    - match: ant-design-issue-helper
+      assignees: 
+       - yesmeck
+      random: true
