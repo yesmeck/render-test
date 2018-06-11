@@ -2,7 +2,7 @@ reply:
   enable: true
   rules:
     - filter:
-        notMatch: ant-design-issue-helper
+        body: ant-design-issue-helper
         ^author: (yesmeck|abc)
       action:
         comment: >
@@ -11,7 +11,7 @@ reply:
         label: invalid
         close: true
     - filter:
-        matchTitle: >
+        title: >
           (官网|网站|mobile ant design|mobile.ant.design|ant design|ant.design|pro).*
           (挂了|无法访问|不能访问|访问不了|出问题|打不开|登不上|can't open|can not open|can not be reached|can't be reached)
       action:
@@ -31,7 +31,7 @@ assign:
   enable: true
   rules:
     - filter: 
-        match: ant-design-issue-helper
+        body: ant-design-issue-helper
       assignees:
        - yesmeck
       random: true
@@ -47,13 +47,13 @@ replyLabel:
   enable: true
   rules:
     - filter:
-        match: Need Reproduce
+        label: Need Reproduce
       action:
         comment: >
           Please provide a online reproduction by forking this link https://u.ant.design/codesandbox-repro. 
           Issues labeled by `Need Reproduce` will be closed if no activities in 7 days.
     - filter:
-        match: '[Usage|Question]'
+        label: '[Usage|Question]'
       action:
         comment: >
           We use GitHub issues to trace bugs or discuss plans of Ant Design. 
@@ -65,7 +65,7 @@ translate:
   enable: true
   rules:
     - filter:
-        matchTitle: '[\u4e00-\u9fa5]'
+        title: '[\u4e00-\u9fa5]'
       from: zh-CN
 commands:
   enable: true
