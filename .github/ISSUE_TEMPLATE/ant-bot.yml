@@ -1,5 +1,5 @@
 reply:
   enabel: true
   body:
-    unmatching: ant-design-issue-helper
+    unmatch: ant-design-issue-helper
     reply: Hello {{user}}, your issue has been closed because it does not conform to our issue requirements. Please use the [Issue Helper](http://new-issue.ant.design?repo=ant-design) to create an issue, thank you!
