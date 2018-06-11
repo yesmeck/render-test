@@ -23,7 +23,7 @@ release:
     - path: 'CHANGELOG.zh-CN.md'
       skip: ^`
     - filter:
-replayLabel: 
+replyLabel: 
   rules:
     - filter:
         match: Need Reproduce
