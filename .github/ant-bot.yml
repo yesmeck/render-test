@@ -3,6 +3,7 @@ reply:
   rules:
     - filter:
         notMatch: ant-design-issue-helper
+        !author: (yesmeck)
       action:
         comment: >
           Your issue has been closed because it does not conform to our issue requirements. 
