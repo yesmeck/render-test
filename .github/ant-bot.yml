@@ -7,10 +7,6 @@ reply:
         comment: Your issue has been closed because it does not conform to our issue requirements. Please use the [Issue Helper](http://new-issue.ant.design?repo=ant-design) to create an issue, thank you!
         label: invalid
         close: true
-    - filter:
-        label: Need Reproduce
-      action:
-        comment: Please provide a online reproduction by forking this link https://u.ant.design/codesandbox-repro. Issues labeled by \`Need Reproduce\` will be closed if no activities in 7 days.
 assign:
   enable: true
   rules:
@@ -26,3 +22,10 @@ release:
       skip: ^`
     - path: 'CHANGELOG.zh-CN.md'
       skip: ^`
+    - filter:
+replayLabel: 
+  rules:
+    - filter
+        match: Need Reproduce
+      action:
+        comment: Please provide a online reproduction by forking this link https://u.ant.design/codesandbox-repro. Issues labeled by \`Need Reproduce\` will be closed if no activities in 7 days.
