@@ -39,8 +39,16 @@ release:
       skip: ^`
     - filter:
 replyLabel: 
+  enable: true
   rules:
     - filter:
         match: Need Reproduce
       action:
         comment: Please provide a online reproduction by forking this link https://u.ant.design/codesandbox-repro. Issues labeled by `Need Reproduce` will be closed if no activities in 7 days.
+translate:
+  enabel: true
+  rules:
+    - filter:
+        matchTitle: [\u4e00-\u9fa5]
+      from: zh-CN
+  
