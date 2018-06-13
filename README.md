@@ -5,7 +5,7 @@ You can find the most recent version of this guide [here](https://github.com/fac
 
 ## Table of Contents
 1
-- [Updating to New Releases](#updating-to-new-releases)
+- [Updating to New Releases](#updating-to-new-releases)1
 - [Sending Feedback](#sending-feedback)
 - [Folder Structure](#folder-structure)
 - [Available Scripts](#available-scripts)
