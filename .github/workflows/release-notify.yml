@@ -14,11 +14,9 @@ jobs:
         dingToken: ${{ secrets.DING_TOKEN }}
         body: |
           {
-            "msgtype": "link",
-            "link": {
-                "text": "${{github.event.release.body}}",
+            "msgtype": "markdown",
+            "markdown": {
                 "title": "Remax 发布 ${{github.event.release.tag_name}}",
-                "picUrl": "",
-                "messageUrl": "${{github.event.release.url}}"
+                "text": "${{github.event.release.body}}",
             }
           }
