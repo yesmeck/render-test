@@ -17,6 +17,6 @@ jobs:
             "msgtype": "markdown",
             "markdown": {
                 "title": "Remax 发布 ${{github.event.release.tag_name}}",
-                "text": "${{github.event.release.body}}",
+                "text": "# 发布公告\n${{github.event.release.body}}",
             }
           }
