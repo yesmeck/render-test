@@ -1,0 +1,24 @@
+name: Release notify
+
+on:
+  release:
+    types: [published] 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Send dingding notify
+      uses: zcong1993/actions-ding@master
+      with:
+        dingToken: ${{ secrets.DING_TOKEN }}
+        body: |
+          {
+            "msgtype": "link",
+            "link": {
+                "text": "${{github.event.release.body}}",
+                "title": "Remax 发布 ${{github.event.release.tag_name}}",
+                "picUrl": "",
+                "messageUrl": "${{github.event.release.url}}"
+            }
+          }
