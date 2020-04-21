@@ -15,8 +15,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: PR Comment
-      uses: github-actions-up-and-running/pr-comment@v1.0.0
+    - name: comment
+      uses: mshick/add-pr-comment@v1
       with:
+        message: |
+            **Hello**
+            🌏
+            !
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        message: hello
+        allow-repeats: false
