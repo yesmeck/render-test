@@ -4,10 +4,9 @@
 name: Node.js CI
 
 on:
-  push:
-    branches: [ master ]
   pull_request:
-    branches: [ master ]
+    branches:
+      - master
 
 jobs:
   build:
@@ -15,12 +14,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: comment
-      uses: mshick/add-pr-comment@v1
-      with:
-        message: |
-            **Hello**
-            🌏
-            !
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        allow-repeats: false
+      - name: Create comment
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: ${{ github.event.issue.id }}
+          body: |
+            This is a multi-line test comment
+            - With GitHub **Markdown**
+            - Created by [create-or-update-comment][1]
+
+            [1]: https://github.com/peter-evans/create-or-update-comment
+          reactions: '+1'
